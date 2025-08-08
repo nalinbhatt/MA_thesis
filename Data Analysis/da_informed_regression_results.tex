@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{DA vs AMM + Informed Trader Analysis}
+\label{tab:da_informed_regression_results}
+\begin{tabular}{lccccc}
+\hline\hline
+ & total\_surplus\_all & total\_surplus\_demand & total\_surplus\_battery & total\_surplus\_solar & total\_surplus\_utility \\
+\hline
+AMM + Informed Trader & 519.8021^{***} & 139.2089^{**} & 80.3450^{***} & 83.6875^{***} & 216.5608^{***} \\
+ & (35.3491) & (49.2519) & (9.8681) & (14.3468) & (4.1332) \\
+C\_max & 5.6931 & -2.0606 & 8.3205^{***} & -0.3376 & -0.2293 \\
+ & (4.2275) & (5.8902) & (1.1802) & (1.7158) & (0.4943) \\
+C\_init & 1.7202 & 0.2819 & 1.8430 & 0.0389 & -0.4436 \\
+ & (5.4413) & (7.5814) & (1.5190) & (2.2084) & (0.6362) \\
+q\_b\_max & 7.3720 & -16.1229 & 23.8893^{***} & 0.1279 & -0.5222 \\
+ & (12.6644) & (17.6454) & (3.5354) & (5.1400) & (1.4808) \\
+mean\_pmax & 167.5127^{***} & 216.6787^{***} & 10.3396^{***} & -51.0963^{***} & -8.4093^{***} \\
+ & (3.6390) & (5.0702) & (1.0159) & (1.4769) & (0.4255) \\
+std\_pmax & 84.8602^{***} & 121.8398^{***} & -2.9583 & -28.9464^{***} & -5.0748^{***} \\
+ & (5.5247) & (7.6976) & (1.5423) & (2.2423) & (0.6460) \\
+\hline
+R$^2$ & 0.8390 & 0.8179 & 0.2704 & 0.7484 & 0.8150 \\
+Adj. R$^2$ & 0.8378 & 0.8165 & 0.2650 & 0.7465 & 0.8136 \\
+Observations & 808 & 808 & 808 & 808 & 808 \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Standard errors in parentheses. Reference category: Double Auction. Significance levels: *** p$<$0.001, ** p$<$0.01, * p$<$0.05
+\end{tablenotes}
+\end{table}
